@@ -1,0 +1,15 @@
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\bin\Debug\net7.0\WareHousingApi.Entities.deps.json
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\bin\Debug\net7.0\WareHousingApi.Entities.dll
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\bin\Debug\net7.0\WareHousingApi.Entities.pdb
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\bin\Debug\net7.0\WareHousingApi.Common.dll
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\bin\Debug\net7.0\WareHousingApi.Common.pdb
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\obj\Debug\net7.0\WareHousingApi.Entities.csproj.AssemblyReference.cache
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\obj\Debug\net7.0\WareHousingApi.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\obj\Debug\net7.0\WareHousingApi.Entities.AssemblyInfoInputs.cache
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\obj\Debug\net7.0\WareHousingApi.Entities.AssemblyInfo.cs
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\obj\Debug\net7.0\WareHousingApi.Entities.csproj.CoreCompileInputs.cache
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\obj\Debug\net7.0\WareHousingApi.Entities.csproj.CopyComplete
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\obj\Debug\net7.0\WareHousingApi.Entities.dll
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\obj\Debug\net7.0\refint\WareHousingApi.Entities.dll
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\obj\Debug\net7.0\WareHousingApi.Entities.pdb
+D:\WareHousingApi\WareHousingApi.Api\WareHousingApi.Entities\obj\Debug\net7.0\ref\WareHousingApi.Entities.dll
