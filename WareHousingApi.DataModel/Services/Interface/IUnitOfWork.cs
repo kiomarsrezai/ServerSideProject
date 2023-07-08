@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,20 +14,20 @@ namespace WareHousingApi.DataModel.Services.Interface
     {
         GenericCRUDClass<ApplicationUsers> userManagerUW { get; }
         GenericCRUDClass<ApplicationRoles> roleManagerUW { get; }
-        GenericCRUDClass<Countries_Tbl> countryUW { get; }
-        GenericCRUDClass<Suppliers_Tbl> supplierUW { get; }
-        GenericCRUDClass<Products_Tbl> productUW { get; }
-        GenericCRUDClass<FiscalYears_Tbl> fiscalYearUW { get; }
-        GenericCRUDClass<WareHouses_Tbl> wareHouseUW { get; }
-        GenericCRUDClass<Inventories_Tbl> inventoryUW { get; }
-        GenericCRUDClass<ProductPrices_Tbl> productPriceUW { get; }
-        GenericCRUDClass<ProductLocations_Tbl> productLocationUW { get; }
-        GenericCRUDClass<UserInWareHouse_Tbl> userInWareHouseUW { get; }
-        GenericCRUDClass<Customers_Tbl> customerUW { get; }
-        GenericCRUDClass<InvoiceItems_Tbl> invoicesItemsUW { get; }
-        GenericCRUDClass<Invoices_Tbl> invoicesUW { get; }
+        GenericCRUDClass<Country> countryUW { get; }
+        GenericCRUDClass<Supplier> supplierUW { get; }
+        GenericCRUDClass<Product> productUW { get; }
+        GenericCRUDClass<FiscalYear> fiscalYearUW { get; }
+        GenericCRUDClass<WareHouse> wareHouseUW { get; }
+        GenericCRUDClass<Inventory> inventoryUW { get; }
+        GenericCRUDClass<ProductPrice> productPriceUW { get; }
+        GenericCRUDClass<ProductLocation> productLocationUW { get; }
+        GenericCRUDClass<UserInWareHouse> userInWareHouseUW { get; }
+        GenericCRUDClass<Customer> customerUW { get; }
+        GenericCRUDClass<InvoiceItem> invoicesItemsUW { get; }
+        GenericCRUDClass<Invoice> invoicesUW { get; }
         void Save();
-        void SaveAsync();
+        Task SaveAsync();
 
         IEntityTransaction BeginTransaction();
     }

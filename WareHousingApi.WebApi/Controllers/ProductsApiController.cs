@@ -21,10 +21,10 @@ namespace WareHousingApi.WebApi.Controllers
         }
 
         [HttpGet("GetProduct")]
-        public ApiResponse<IEnumerable<Products_Tbl>> Get()
+        public ApiResponse<IEnumerable<Product>> Get()
         {
             var productList = _context.productUW.Get(null, "Supplier,Country");
-            return new ApiResponse<IEnumerable<Products_Tbl>>
+            return new ApiResponse<IEnumerable<Product>>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -36,12 +36,12 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpGet("GetById")]
         [Produces("application/json")]
-        [ProducesResponseType(typeof(Products_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Product), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ApiResponse<Products_Tbl> GetById([FromQuery] int productid)
+        public ApiResponse<Product> GetById([FromQuery] int productid)
         {
             var product = _context.productUW.GetById(productid);
-            return new ApiResponse<Products_Tbl>
+            return new ApiResponse<Product>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -76,7 +76,7 @@ namespace WareHousingApi.WebApi.Controllers
             }
             try
             {
-                Products_Tbl P = new Products_Tbl
+                Product P = new Product
                 {
                     ProductName = model.ProductName,
                     ProductCode = model.ProductCode,
@@ -93,7 +93,7 @@ namespace WareHousingApi.WebApi.Controllers
                 };
                 _context.productUW.Create(P);
                 _context.Save();
-                return new ApiResponse<Products_Tbl>
+                return new ApiResponse<Product>
                 {
                     flag = true,
                     StatusCode = ApiResultStatusCode.Success,
@@ -114,7 +114,7 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpPut("{id}")]
         [Route("UpdateProduct")]
-        [ProducesResponseType(typeof(Products_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Product), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ApiResponse Update([FromForm] ProductEditModel model)
         {
@@ -149,7 +149,7 @@ namespace WareHousingApi.WebApi.Controllers
 
             _context.productUW.Update(getProduct);
             _context.Save();
-            return new ApiResponse<Products_Tbl>
+            return new ApiResponse<Product>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,

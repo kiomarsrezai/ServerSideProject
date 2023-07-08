@@ -35,7 +35,7 @@ namespace WareHousingApi.DataModel.Services.Repository
             _context.Entry(entity).State = EntityState.Modified;
         }
 
-        public virtual IEnumerable<Tentity> Get(Expression<Func<Tentity, bool>>? whereVariable = null, string JoinStrig = "")
+        public virtual IEnumerable<Tentity> Get(Expression<Func<Tentity, bool>> whereVariable = null, string JoinStrig = "")
         {
             IQueryable<Tentity> query = _table;
 
@@ -48,7 +48,7 @@ namespace WareHousingApi.DataModel.Services.Repository
             {
                 foreach (string item in JoinStrig.Split(','))
                 {
-                    query = query.Include(item);
+                   query = query.Include(item);
                 }
             }
 

@@ -24,10 +24,10 @@ namespace WareHousingApi.WebApi.Controllers
         }
 
         [HttpGet("GetInventory")]
-        public ApiResponse<IEnumerable<Inventories_Tbl>> Get()
+        public ApiResponse<IEnumerable<Inventory>> Get()
         {
             var inventoryList = _context.inventoryUW.Get();
-            return new ApiResponse<IEnumerable<Inventories_Tbl>>
+            return new ApiResponse<IEnumerable<Inventory>>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -65,7 +65,7 @@ namespace WareHousingApi.WebApi.Controllers
             {
                 byte OperationTypeVal =
                     (byte)(model.BalanceStockAdd == "on" ? 7 : (model.BalanceStockAdd == "" || model.BalanceStockAdd == null) ? 1 : 0);
-                Inventories_Tbl I = new Inventories_Tbl
+                Inventory I = new Inventory
                 {
                     ProductID = model.ProductID,
                     WareHouseID = model.WareHouseID,
@@ -82,8 +82,8 @@ namespace WareHousingApi.WebApi.Controllers
                     ProductLocationID = model.ProductLocationID
                 };
                 _context.inventoryUW.CreateAsync(I, ct);
-                _context.Save();
-                return new ApiResponse<Inventories_Tbl>
+                await _context.SaveAsync();
+                return new ApiResponse<Inventory>
                 {
                     flag = true,
                     StatusCode = ApiResultStatusCode.Success,
@@ -167,7 +167,7 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpPost]
         [Route("ExitProductStockApi")]
-        public async Task<ApiResponse> ExitProductStock([FromForm] ExitStockModel model, CancellationToken ct)
+        public ApiResponse ExitProductStock([FromForm] ExitStockModel model, CancellationToken ct)
         {
             //حواله خروج از انبار
             if (!ModelState.IsValid) return new ApiResponse
@@ -192,8 +192,8 @@ namespace WareHousingApi.WebApi.Controllers
                 byte OperationTypeVal =
              (byte)(model.BalanceStockRemove == "on" ? 8 : (model.BalanceStockRemove == "" || model.BalanceStockRemove == null) ? 2 : 0);
 
-                var getInfo = _context.inventoryUW.Get(i => i.InventoryID == model.ReffernceInvID).Single();
-                Inventories_Tbl I = new Inventories_Tbl
+                var getInfo =_context.inventoryUW.Get(i => i.InventoryID == model.ReffernceInvID).Single();
+                Inventory I = new Inventory
                 {
                     ProductID = model.ProductIDE,
                     WareHouseID = model.WareHouseIDE,
@@ -211,7 +211,7 @@ namespace WareHousingApi.WebApi.Controllers
                 };
                 _context.inventoryUW.CreateAsync(I, ct);
                 _context.Save();
-                return new ApiResponse<Inventories_Tbl>
+                return new ApiResponse<Inventory>
                 {
                     flag = true,
                     StatusCode = ApiResultStatusCode.Success,
@@ -290,7 +290,7 @@ namespace WareHousingApi.WebApi.Controllers
             try
             {
                 var getParentInfo = _context.inventoryUW.Get(i => i.InventoryID == model.ReffernceInvIDWastage).Single();
-                Inventories_Tbl I = new Inventories_Tbl
+                Inventory I = new Inventory
                 {
                     ProductID = model.ProductIDWastage,
                     WareHouseID = model.WareHouseIDWastage,
@@ -307,8 +307,8 @@ namespace WareHousingApi.WebApi.Controllers
                     ProductLocationID = getParentInfo.ProductLocationID
                 };
                 _context.inventoryUW.CreateAsync(I, ct);
-                _context.Save();
-                return new ApiResponse<Inventories_Tbl>
+                await _context.SaveAsync();
+                return new ApiResponse<Inventory>
                 {
                     flag = true,
                     StatusCode = ApiResultStatusCode.Success,
@@ -353,7 +353,7 @@ namespace WareHousingApi.WebApi.Controllers
             try
             {
                 var getParentInfo = _context.inventoryUW.Get(i => i.InventoryID == model.ReffernceInvIDBackWastage).Single();
-                Inventories_Tbl I = new Inventories_Tbl
+                Inventory I = new Inventory
                 {
                     ProductID = model.ProductIDBackWastage,
                     WareHouseID = model.WareHouseIDBackWastage,
@@ -370,8 +370,8 @@ namespace WareHousingApi.WebApi.Controllers
                     ProductLocationID = getParentInfo.ProductLocationID
                 };
                 _context.inventoryUW.CreateAsync(I, ct);
-                _context.Save();
-                return new ApiResponse<Inventories_Tbl>
+                await _context.SaveAsync();
+                return new ApiResponse<Inventory>
                 {
                     flag = true,
                     StatusCode = ApiResultStatusCode.Success,

@@ -9,7 +9,7 @@ namespace WareHousingApi.DataModel.Services.Interface
 {
     public interface IFiscalYearRepository
     {
-        FiscalYears_Tbl UpdateFiscalYear(FiscalYearEditModel model);
+        FiscalYear UpdateFiscalYear(FiscalYearEditModel model);
         bool CheckDateForFiscalYear(DateTime StartDate, DateTime EndDate);
     }
 }

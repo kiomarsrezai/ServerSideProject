@@ -9,6 +9,6 @@ namespace WareHousingApi.DataModel.Services.Interface
 {
     public interface IWareHouseRepository
     {
-        WareHouses_Tbl UpdateWareHouse(WareHouseEditModel model);
+        WareHouse UpdateWareHouse(WareHouseEditModel model);
     }
 }

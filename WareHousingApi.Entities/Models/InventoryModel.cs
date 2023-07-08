@@ -53,7 +53,7 @@ namespace WareHousingApi.Entities
         public string UserID { get; set; }
         public int ProductLocationID { get; set; }
         
-        public string? BalanceStockAdd { get; set; }
+        public string BalanceStockAdd { get; set; }
     }
 
     public class ExitStockModel
@@ -86,7 +86,7 @@ namespace WareHousingApi.Entities
         public string DescriptionE { get; set; }
         public string UserIDE { get; set; }
         public int ReffernceInvID { get; set; }
-        public string? BalanceStockRemove { get; set; }
+        public string BalanceStockRemove { get; set; }
     }
 
     public class WastageStockModel

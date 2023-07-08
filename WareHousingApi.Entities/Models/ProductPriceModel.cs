@@ -34,7 +34,7 @@ namespace WareHousingApi.Entities
         public string ProductName { get; set; }
         public string ProductCode { get; set; }
         public int FiscalYearID { get; set; }
-        public string? UserID { get; set; }
+        public string UserID { get; set; }
         public int PurchasePrice { get; set; }
         public int SalesPrice { get; set; }
         public int CoverPrice { get; set; }

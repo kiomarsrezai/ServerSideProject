@@ -29,10 +29,10 @@ namespace WareHousingApi.WebApi.Controllers
         }
 
         [HttpGet("GetFiscalYear")]
-        public ApiResponse<IEnumerable<FiscalYears_Tbl>> Get()
+        public ApiResponse<IEnumerable<FiscalYear>> Get()
         {
             var fiscalYearList = _context.fiscalYearUW.Get();
-            return new ApiResponse<IEnumerable<FiscalYears_Tbl>>
+            return new ApiResponse<IEnumerable<FiscalYear>>
             {
                 flag = true,
                 Message = ApiResultStatusCode.Success.DisplayNameAttribute(DisplayProperty.Name),
@@ -43,12 +43,12 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpGet("GetById")]
         [Produces("application/json")]
-        [ProducesResponseType(typeof(FiscalYears_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(FiscalYear), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ApiResponse<FiscalYears_Tbl> GetById([FromQuery] int fiscalyearid)
+        public ApiResponse<FiscalYear> GetById([FromQuery] int fiscalyearid)
         {
             var fiscalyear = _context.fiscalYearUW.GetById(fiscalyearid);
-            return new ApiResponse<FiscalYears_Tbl>
+            return new ApiResponse<FiscalYear>
             {
                 flag = true,
                 Message = ApiResultStatusCode.Success.DisplayNameAttribute(DisplayProperty.Name),
@@ -97,7 +97,7 @@ namespace WareHousingApi.WebApi.Controllers
             }
             try
             {
-                FiscalYears_Tbl FY = new FiscalYears_Tbl
+                FiscalYear FY = new FiscalYear
                 {
                     CreateDateTime = DateTime.Now,
                     FiscalFlag = false,
@@ -110,7 +110,7 @@ namespace WareHousingApi.WebApi.Controllers
                 };
                 _context.fiscalYearUW.Create(FY);
                 _context.Save();
-                return new ApiResponse<FiscalYears_Tbl>
+                return new ApiResponse<FiscalYear>
                 {
                     flag = true,
                     StatusCode = ApiResultStatusCode.Success,
@@ -132,7 +132,7 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpPut("{id}")]
         [Route("UpdateFiscalYear")]
-        [ProducesResponseType(typeof(FiscalYears_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(FiscalYear), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ApiResponse Update([FromForm] FiscalYearEditModel model)
         {
@@ -166,7 +166,7 @@ namespace WareHousingApi.WebApi.Controllers
             }
             //Update
             //return Ok();
-            return new ApiResponse<FiscalYears_Tbl>
+            return new ApiResponse<FiscalYear>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -196,9 +196,9 @@ namespace WareHousingApi.WebApi.Controllers
 
         //دریافت اطلاعات سال مالی کنونی و باز
         [HttpGet("GetCurrentFiscalYearApi")]
-        public ApiResponse<FiscalYears_Tbl> GetCurrentFiscalYear()
+        public ApiResponse<FiscalYear> GetCurrentFiscalYear()
         {
-            return new ApiResponse<FiscalYears_Tbl>
+            return new ApiResponse<FiscalYear>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -208,11 +208,11 @@ namespace WareHousingApi.WebApi.Controllers
         }
         //دریافت اطلاعات سال مالی جدید
         [HttpGet("GetNewFiscalYearApi")]
-        public ApiResponse<FiscalYears_Tbl> GetNewFiscalYear()
+        public ApiResponse<FiscalYear> GetNewFiscalYear()
         {
             DateTime LastEndDate = (_context.fiscalYearUW.Get(f1 => f1.FiscalFlag == true).Select(s => s.EndDate.Date)).Single();
 
-            return new ApiResponse<FiscalYears_Tbl>
+            return new ApiResponse<FiscalYear>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,

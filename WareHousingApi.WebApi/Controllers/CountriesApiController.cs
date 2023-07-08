@@ -24,10 +24,10 @@ namespace WareHousingApi.WebApi.Controllers
         }
 
         [HttpGet("GetCountry")]
-        public ApiResponse<IEnumerable<Countries_Tbl>> Get()
+        public ApiResponse<IEnumerable<Country>> Get()
         {
             var countryList = _context.countryUW.Get();
-            return new ApiResponse<IEnumerable<Countries_Tbl>>
+            return new ApiResponse<IEnumerable<Country>>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -52,7 +52,7 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpGet("GetById")]
         [Produces("application/json")]
-        [ProducesResponseType(typeof(Countries_Tbl) , StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Country) , StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ApiResponse GetById([FromQuery]int countryid)
         {
@@ -65,7 +65,7 @@ namespace WareHousingApi.WebApi.Controllers
                 Message = ApiResultStatusCode.NotFound.DisplayNameAttribute(DisplayProperty.Name)
             };
             
-            return new ApiResponse<Countries_Tbl>
+            return new ApiResponse<Country>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -99,7 +99,7 @@ namespace WareHousingApi.WebApi.Controllers
             }
             try
             {
-                Countries_Tbl C = new Countries_Tbl
+                Country C = new Country
                 {
                     CountryName = countryname,
                     CreateDateTime = DateTime.Now,
@@ -107,7 +107,7 @@ namespace WareHousingApi.WebApi.Controllers
                 };
                 _context.countryUW.Create(C);
                 _context.Save();
-                return new ApiResponse<Countries_Tbl>
+                return new ApiResponse<Country>
                 {
                     flag = true,
                     StatusCode = ApiResultStatusCode.Success,
@@ -128,7 +128,7 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpPut("{id}")]
         [Route("UpdateCountry")]
-        [ProducesResponseType(typeof(Countries_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Country), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ApiResponse Update([FromBody] CountryEditViewModel model)
         {
@@ -147,7 +147,7 @@ namespace WareHousingApi.WebApi.Controllers
 
             _context.countryUW.Update(getCountry);
             _context.Save();
-            return new ApiResponse<Countries_Tbl>
+            return new ApiResponse<Country>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,

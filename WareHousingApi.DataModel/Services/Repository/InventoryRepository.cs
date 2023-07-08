@@ -195,7 +195,7 @@ namespace WareHousingApi.DataModel.Services.Repository
             //ثبت اسناد در دیتابیس
             for (int i = 0; i < pureExList.Count(); i++)
             {
-                Inventories_Tbl Inv = new Inventories_Tbl
+                Inventory Inv = new Inventory
                 {
                     OperationType = 9,
                     CreateDateTime = DateTime.Now,

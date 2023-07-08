@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Common\\WareHousingApi.Common.csproj": {}
+    "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Common\\WareHousingApi.Common.csproj": {}
   },
   "projects": {
-    "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Common\\WareHousingApi.Common.csproj": {
+    "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Common\\WareHousingApi.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Common\\WareHousingApi.Common.csproj",
+        "projectUniqueName": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Common\\WareHousingApi.Common.csproj",
         "projectName": "WareHousingApi.Common",
-        "projectPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Common\\WareHousingApi.Common.csproj",
-        "packagesPath": "C:\\Users\\ict-rmirghaed\\.nuget\\packages\\",
-        "outputPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Common\\obj\\",
+        "projectPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Common\\WareHousingApi.Common.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ict-rmirghaed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "Https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -95,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

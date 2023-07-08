@@ -26,3 +26,17 @@ D:\InventoryBackEnd\ServerSideProject\WareHousingApi.Common\obj\Debug\net7.0\ref
 D:\InventoryBackEnd\ServerSideProject\WareHousingApi.Common\obj\Debug\net7.0\WareHousingApi.Common.pdb
 D:\InventoryBackEnd\ServerSideProject\WareHousingApi.Common\obj\Debug\net7.0\WareHousingApi.Common.genruntimeconfig.cache
 D:\InventoryBackEnd\ServerSideProject\WareHousingApi.Common\obj\Debug\net7.0\ref\WareHousingApi.Common.dll
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\bin\Debug\net7.0\WareHousingApi.Common.deps.json
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\bin\Debug\net7.0\WareHousingApi.Common.runtimeconfig.json
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\bin\Debug\net7.0\WareHousingApi.Common.dll
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\bin\Debug\net7.0\WareHousingApi.Common.pdb
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\obj\Debug\net7.0\WareHousingApi.Common.csproj.AssemblyReference.cache
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\obj\Debug\net7.0\WareHousingApi.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\obj\Debug\net7.0\WareHousingApi.Common.AssemblyInfoInputs.cache
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\obj\Debug\net7.0\WareHousingApi.Common.AssemblyInfo.cs
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\obj\Debug\net7.0\WareHousingApi.Common.csproj.CoreCompileInputs.cache
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\obj\Debug\net7.0\WareHousingApi.Common.dll
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\obj\Debug\net7.0\refint\WareHousingApi.Common.dll
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\obj\Debug\net7.0\WareHousingApi.Common.pdb
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\obj\Debug\net7.0\WareHousingApi.Common.genruntimeconfig.cache
+D:\kiomars\Sources\Inventory\Part131_Source\WareHousingApi\WareHousingApi.Api\WareHousingApi.Common\obj\Debug\net7.0\ref\WareHousingApi.Common.dll

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Services\\WareHousingApi.Services.csproj": {}
+    "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Services\\WareHousingApi.Services.csproj": {}
   },
   "projects": {
-    "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Common\\WareHousingApi.Common.csproj": {
+    "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Common\\WareHousingApi.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Common\\WareHousingApi.Common.csproj",
+        "projectUniqueName": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Common\\WareHousingApi.Common.csproj",
         "projectName": "WareHousingApi.Common",
-        "projectPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Common\\WareHousingApi.Common.csproj",
-        "packagesPath": "C:\\Users\\ict-rmirghaed\\.nuget\\packages\\",
-        "outputPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Common\\obj\\",
+        "projectPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Common\\WareHousingApi.Common.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ict-rmirghaed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "Https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -95,21 +98,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.DataModel\\WareHousingApi.DataModel.csproj": {
+    "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.DataModel\\WareHousingApi.DataModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.DataModel\\WareHousingApi.DataModel.csproj",
+        "projectUniqueName": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.DataModel\\WareHousingApi.DataModel.csproj",
         "projectName": "WareHousingApi.DataModel",
-        "projectPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.DataModel\\WareHousingApi.DataModel.csproj",
-        "packagesPath": "C:\\Users\\ict-rmirghaed\\.nuget\\packages\\",
-        "outputPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.DataModel\\obj\\",
+        "projectPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.DataModel\\WareHousingApi.DataModel.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.DataModel\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ict-rmirghaed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -117,14 +123,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "Https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Entities\\WareHousingApi.Entities.csproj": {
-                "projectPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Entities\\WareHousingApi.Entities.csproj"
+              "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Entities\\WareHousingApi.Entities.csproj": {
+                "projectPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Entities\\WareHousingApi.Entities.csproj"
               }
             }
           }
@@ -154,21 +160,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Entities\\WareHousingApi.Entities.csproj": {
+    "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Entities\\WareHousingApi.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Entities\\WareHousingApi.Entities.csproj",
+        "projectUniqueName": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Entities\\WareHousingApi.Entities.csproj",
         "projectName": "WareHousingApi.Entities",
-        "projectPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Entities\\WareHousingApi.Entities.csproj",
-        "packagesPath": "C:\\Users\\ict-rmirghaed\\.nuget\\packages\\",
-        "outputPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Entities\\obj\\",
+        "projectPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Entities\\WareHousingApi.Entities.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ict-rmirghaed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,14 +185,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "Https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Common\\WareHousingApi.Common.csproj": {
-                "projectPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Common\\WareHousingApi.Common.csproj"
+              "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Common\\WareHousingApi.Common.csproj": {
+                "projectPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Common\\WareHousingApi.Common.csproj"
               }
             }
           }
@@ -213,21 +222,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Services\\WareHousingApi.Services.csproj": {
+    "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Services\\WareHousingApi.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Services\\WareHousingApi.Services.csproj",
+        "projectUniqueName": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Services\\WareHousingApi.Services.csproj",
         "projectName": "WareHousingApi.Services",
-        "projectPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Services\\WareHousingApi.Services.csproj",
-        "packagesPath": "C:\\Users\\ict-rmirghaed\\.nuget\\packages\\",
-        "outputPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.Services\\obj\\",
+        "projectPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Services\\WareHousingApi.Services.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ict-rmirghaed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -235,14 +247,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "Https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.DataModel\\WareHousingApi.DataModel.csproj": {
-                "projectPath": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.DataModel\\WareHousingApi.DataModel.csproj"
+              "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.DataModel\\WareHousingApi.DataModel.csproj": {
+                "projectPath": "D:\\kiomars\\Sources\\Inventory\\Part131_Source\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.DataModel\\WareHousingApi.DataModel.csproj"
               }
             }
           }
@@ -272,7 +284,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

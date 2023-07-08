@@ -118,7 +118,7 @@ namespace WareHousingApi.WebApi.Controllers
                 //ثبت اطلاعات انبار کاربر
                 for (int i = 0; i < model.UserInWareHouseIDC.Count(); i++)
                 {
-                    UserInWareHouse_Tbl UW = new UserInWareHouse_Tbl
+                    UserInWareHouse UW = new UserInWareHouse
                     {
                         CreateDateTime = DateTime.Now,
                         UserIDInWareHouse = U.Id,
@@ -179,7 +179,7 @@ namespace WareHousingApi.WebApi.Controllers
                     //ثبت اطلاعات انبار کاربر
                     for (int i = 0; i < model.UserInWareHouseID.Count(); i++)
                     {
-                        UserInWareHouse_Tbl UW = new UserInWareHouse_Tbl
+                        UserInWareHouse UW = new UserInWareHouse
                         {
                             CreateDateTime = DateTime.Now,
                             UserIDInWareHouse = model.UserIDWareHouse,

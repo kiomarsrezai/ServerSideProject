@@ -9,6 +9,6 @@ namespace WareHousingApi.DataModel.Services.Interface
 {
     public interface IProductLocationRepository
     {
-        ProductLocations_Tbl UpdateProductLocation(ProductLocationEditModel model);
+        ProductLocation UpdateProductLocation(ProductLocationEditModel model);
     }
 }

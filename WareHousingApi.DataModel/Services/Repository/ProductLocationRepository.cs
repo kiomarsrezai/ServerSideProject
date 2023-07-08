@@ -16,7 +16,7 @@ namespace WareHousingApi.DataModel.Services.Repository
         }
 
 
-        public ProductLocations_Tbl UpdateProductLocation(ProductLocationEditModel model)
+        public ProductLocation UpdateProductLocation(ProductLocationEditModel model)
         {
             var getplocation = this.productLocationUW.Get(f => f.ProductLocationID == model.ProductLocationID).FirstOrDefault();
 

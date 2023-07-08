@@ -88,7 +88,7 @@ namespace WareHousingApi.WebApi.Controllers
                     }
                     //
                     //1 = Create Invoice
-                    Invoices_Tbl I = new Invoices_Tbl
+                    Invoice I = new Invoice
                     {
                         CustomerID = model.customerid,
                         WareHouseID = model.warehouseid,
@@ -118,7 +118,7 @@ namespace WareHousingApi.WebApi.Controllers
                         }
 
 
-                        InvoiceItems_Tbl II = new InvoiceItems_Tbl
+                        InvoiceItem II = new InvoiceItem
                         {
                             UserID = model.userid,
                             CreateDateTime = DateTime.Now,
@@ -189,7 +189,7 @@ namespace WareHousingApi.WebApi.Controllers
                 int getBranchStock = _inventory.GetPhysicalStockForBranch(expireDateListWithStock[j].InventoryID);
                 if (SavedStock <= getBranchStock)
                 {
-                    Inventories_Tbl Inv = new Inventories_Tbl
+                    Inventory Inv = new Inventory
                     {
                         CreateDateTime = DateTime.Now,
                         Description = "فروش",
@@ -213,7 +213,7 @@ namespace WareHousingApi.WebApi.Controllers
                 else if (SavedStock > getBranchStock)
                 {
                     SavedStock -= getBranchStock;
-                    Inventories_Tbl Inv = new Inventories_Tbl
+                    Inventory Inv = new Inventory
                     {
                         CreateDateTime = DateTime.Now,
                         Description = "فروش",
@@ -308,7 +308,7 @@ namespace WareHousingApi.WebApi.Controllers
                     var getInventoryRecord = _context.inventoryUW.Get(i => i.InvoiceID == model.InvoiceID).ToList();
                     for (int i = 0; i < getInventoryRecord.Count(); i++)
                     {
-                        Inventories_Tbl Inv = new Inventories_Tbl
+                        Inventory Inv = new Inventory
                         {
                             CreateDateTime = DateTime.Now,
                             Description = "مرجوع",
@@ -348,13 +348,6 @@ namespace WareHousingApi.WebApi.Controllers
                     };
                 }
             }
-
-            return new ApiResponse
-            {
-                flag = false,
-                StatusCode = ApiResultStatusCode.ServerError,
-                Message = ApiResultStatusCode.ServerError.DisplayNameAttribute()
-            };
         }
 
         [HttpPost("SetInvoiceToCloseApi")]
@@ -414,13 +407,6 @@ namespace WareHousingApi.WebApi.Controllers
                     };
                 }
             }
-
-            return new ApiResponse
-            {
-                flag = true,
-                StatusCode = ApiResultStatusCode.Success,
-                Message = ApiResultStatusCode.Success.DisplayNameAttribute(DisplayProperty.Name)
-            };
         }
 
         [HttpPost("DeleteTemporaryInvoiceApi")]
@@ -467,13 +453,6 @@ namespace WareHousingApi.WebApi.Controllers
                     };
                 }
             }
-
-            return new ApiResponse
-            {
-                flag = true,
-                StatusCode = ApiResultStatusCode.Success,
-                Message = ApiResultStatusCode.Success.DisplayNameAttribute()
-            };
         }
 
         //For Print Invoice

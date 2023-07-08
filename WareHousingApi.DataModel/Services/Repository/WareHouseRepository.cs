@@ -16,7 +16,7 @@ namespace WareHousingApi.DataModel.Services.Repository
         
         }
 
-        public WareHouses_Tbl UpdateWareHouse(WareHouseEditModel model)
+        public WareHouse UpdateWareHouse(WareHouseEditModel model)
         {
             var getwarehouse = this.wareHouseUW.Get(f => f.WareHouseID == model.WareHouseID).FirstOrDefault();
 

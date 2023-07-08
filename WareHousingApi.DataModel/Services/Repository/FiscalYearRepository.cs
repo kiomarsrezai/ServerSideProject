@@ -16,7 +16,7 @@ namespace WareHousingApi.DataModel.Services.Repository
         {
         }
 
-        public FiscalYears_Tbl UpdateFiscalYear(FiscalYearEditModel model)
+        public FiscalYear UpdateFiscalYear(FiscalYearEditModel model)
         {
             var getfiscal = this.fiscalYearUW.Get(f => f.FiscalYearID == model.FiscalYearID).FirstOrDefault();
 

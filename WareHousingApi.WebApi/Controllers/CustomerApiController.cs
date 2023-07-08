@@ -22,10 +22,10 @@ namespace WareHousingApi.WebApi.Controllers
         }
 
         [HttpGet("GetCustomer")]
-        public ApiResponse<IEnumerable<Customers_Tbl>> Get(string userID)
+        public ApiResponse<IEnumerable<Customer>> Get(string userID)
         {
             var customerList = _context.customerUW.Get(c => c.UserID == userID, "WareHouses");
-            return new ApiResponse<IEnumerable<Customers_Tbl>>
+            return new ApiResponse<IEnumerable<Customer>>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -36,7 +36,7 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpGet("GetById")]
         [Produces("application/json")]
-        [ProducesResponseType(typeof(Customers_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Customer), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ApiResponse GetById([FromQuery] int customerid)
         {
@@ -49,7 +49,7 @@ namespace WareHousingApi.WebApi.Controllers
                 Message = ApiResultStatusCode.NotFound.DisplayNameAttribute(DisplayProperty.Name)
             };
 
-            return new ApiResponse<Customers_Tbl>
+            return new ApiResponse<Customer>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -83,7 +83,7 @@ namespace WareHousingApi.WebApi.Controllers
             }
             try
             {
-                Customers_Tbl C = new Customers_Tbl
+                Customer C = new Customer
                 {
                     CustomerFullName = model.CustomerFullName,
                     CustomerTel = model.CustomerTel,
@@ -95,7 +95,7 @@ namespace WareHousingApi.WebApi.Controllers
                 };
                 _context.customerUW.Create(C);
                 _context.Save();
-                return new ApiResponse<Customers_Tbl>
+                return new ApiResponse<Customer>
                 {
                     flag = true,
                     StatusCode = ApiResultStatusCode.Success,
@@ -116,7 +116,7 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpPut("{id}")]
         [Route("UpdateCustomer")]
-        [ProducesResponseType(typeof(Customers_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Customer), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ApiResponse Update([FromForm] EditCustomerViewModel model)
         {
@@ -146,7 +146,7 @@ namespace WareHousingApi.WebApi.Controllers
 
             _context.customerUW.Update(getCustomer);
             _context.Save();
-            return new ApiResponse<Customers_Tbl>
+            return new ApiResponse<Customer>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,

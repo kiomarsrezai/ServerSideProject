@@ -27,10 +27,10 @@ namespace WareHousingApi.WebApi.Controllers
 
 
         [HttpGet("GetWareHouse")]
-        public ApiResponse<IEnumerable<WareHouses_Tbl>> Get()
+        public ApiResponse<IEnumerable<WareHouse>> Get()
         {
             var wareHouseList = _context.wareHouseUW.Get();
-            return new ApiResponse<IEnumerable<WareHouses_Tbl>>
+            return new ApiResponse<IEnumerable<WareHouse>>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -41,12 +41,12 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpGet("GetById")]
         [Produces("application/json")]
-        [ProducesResponseType(typeof(WareHouses_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(WareHouse), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ApiResponse<WareHouses_Tbl> GetById([FromQuery] int wareHouseid)
+        public ApiResponse<WareHouse> GetById([FromQuery] int wareHouseid)
         {
             var wareHouse = _context.wareHouseUW.GetById(wareHouseid);
-            return new ApiResponse<WareHouses_Tbl>
+            return new ApiResponse<WareHouse>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -82,7 +82,7 @@ namespace WareHousingApi.WebApi.Controllers
             }
             try
             {
-                WareHouses_Tbl WH = new WareHouses_Tbl
+                WareHouse WH = new WareHouse
                 {
                     CreateDateTime = DateTime.Now,
                     UserID = model.UserID,
@@ -92,7 +92,7 @@ namespace WareHousingApi.WebApi.Controllers
                 };
                 _context.wareHouseUW.Create(WH);
                 _context.Save();
-                return new ApiResponse<WareHouses_Tbl>
+                return new ApiResponse<WareHouse>
                 {
                     flag = true,
                     Message = ApiResultStatusCode.Success.DisplayNameAttribute(DisplayProperty.Name),
@@ -114,7 +114,7 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpPut("{id}")]
         [Route("UpdateWareHouse")]
-        [ProducesResponseType(typeof(WareHouses_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(WareHouse), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ApiResponse Update([FromForm] WareHouseEditModel model)
         {
@@ -135,7 +135,7 @@ namespace WareHousingApi.WebApi.Controllers
 
             //Update
             //_ware.UpdateWareHouse(model)
-            return new ApiResponse<WareHouses_Tbl>
+            return new ApiResponse<WareHouse>
             {
                 flag = true,
                 Message = ApiResultStatusCode.Success.DisplayNameAttribute(DisplayProperty.Name),

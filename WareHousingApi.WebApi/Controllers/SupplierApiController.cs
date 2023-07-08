@@ -23,10 +23,10 @@ namespace WareHousingApi.WebApi.Controllers
         }
 
         [HttpGet("GetSupplier")]
-        public ApiResponse<IEnumerable<Suppliers_Tbl>> Get()
+        public ApiResponse<IEnumerable<Supplier>> Get()
         {
             var supplier = _context.supplierUW.Get();
-            return new ApiResponse<IEnumerable<Suppliers_Tbl>>
+            return new ApiResponse<IEnumerable<Supplier>>
             {
                 flag = true,
                 Message = ApiResultStatusCode.Success.DisplayNameAttribute(DisplayProperty.Name),
@@ -38,13 +38,13 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpGet("GetById")]
         [Produces("application/json")]
-        [ProducesResponseType(typeof(Suppliers_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Supplier), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ApiResponse<Suppliers_Tbl> GetById([FromQuery] int supplierid)
+        public ApiResponse<Supplier> GetById([FromQuery] int supplierid)
         {
             var supplier = _context.supplierUW.GetById(supplierid);
             //return supplier == null ? NotFound() : Ok(supplier);
-            return new ApiResponse<Suppliers_Tbl>
+            return new ApiResponse<Supplier>
             {
                 flag = true,
                 Message = ApiResultStatusCode.Success.DisplayNameAttribute(DisplayProperty.Name),
@@ -81,7 +81,7 @@ namespace WareHousingApi.WebApi.Controllers
             }
             try
             {
-                Suppliers_Tbl S = new Suppliers_Tbl
+                Supplier S = new Supplier
                 {
                     SupplierName = model.SupplierName,
                     SupplierTel = model.SupplierTel,
@@ -91,7 +91,7 @@ namespace WareHousingApi.WebApi.Controllers
                 };
                 _context.supplierUW.Create(S);
                 _context.Save();
-                return new ApiResponse<Suppliers_Tbl>
+                return new ApiResponse<Supplier>
                 {
                     flag = true,
                     Message = ApiResultStatusCode.Success.DisplayNameAttribute(DisplayProperty.Name),
@@ -112,7 +112,7 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpPut("{id}")]
         [Route("UpdateSupplier")]
-        [ProducesResponseType(typeof(Suppliers_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Supplier), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ApiResponse Update([FromBody] SupplierEditModel model)
         {
@@ -142,7 +142,7 @@ namespace WareHousingApi.WebApi.Controllers
 
             _context.supplierUW.Update(getSupplier);
             _context.Save();
-            return new ApiResponse<Suppliers_Tbl>
+            return new ApiResponse<Supplier>
             {
                 flag = true,
                 Message = ApiResultStatusCode.Success.DisplayNameAttribute(DisplayProperty.Name),

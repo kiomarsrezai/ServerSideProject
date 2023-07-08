@@ -24,10 +24,10 @@ namespace WareHousingApi.WebApi.Controllers
         }
 
         [HttpGet("GetProductLocation")]
-        public ApiResponse<IEnumerable<ProductLocations_Tbl>> GetProductLocation([FromBody] int wareHouseID)
+        public ApiResponse<IEnumerable<ProductLocation>> GetProductLocation([FromBody] int wareHouseID)
         {
             var productLocationList = _context.productLocationUW.Get(pl => pl.WareHouseID == wareHouseID);
-            return new ApiResponse<IEnumerable<ProductLocations_Tbl>>
+            return new ApiResponse<IEnumerable<ProductLocation>>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -61,7 +61,7 @@ namespace WareHousingApi.WebApi.Controllers
             }
             try
             {
-                ProductLocations_Tbl PL = new ProductLocations_Tbl
+                ProductLocation PL = new ProductLocation
                 {
                     CreateDateTime = DateTime.Now,
                     WareHouseID = model.WareHouseID,
@@ -70,7 +70,7 @@ namespace WareHousingApi.WebApi.Controllers
                 };
                 _context.productLocationUW.Create(PL);
                 _context.Save();
-                return new ApiResponse<ProductLocations_Tbl>
+                return new ApiResponse<ProductLocation>
                 {
                     flag = true,
                     StatusCode = ApiResultStatusCode.Success,
@@ -91,12 +91,12 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpGet("GetById")]
         [Produces("application/json")]
-        [ProducesResponseType(typeof(ProductLocations_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ProductLocation), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ApiResponse<ProductLocations_Tbl> GetById([FromQuery] int productlocationid)
+        public ApiResponse<ProductLocation> GetById([FromQuery] int productlocationid)
         {
             var plocation = _context.productLocationUW.GetById(productlocationid);
-            return new ApiResponse<ProductLocations_Tbl>
+            return new ApiResponse<ProductLocation>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -107,7 +107,7 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpPut("{id}")]
         [Route("UpdateProductLocation")]
-        [ProducesResponseType(typeof(ProductLocations_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ProductLocation), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ApiResponse Update([FromForm] ProductLocationEditModel model)
         {
@@ -137,7 +137,7 @@ namespace WareHousingApi.WebApi.Controllers
                 };
             }
 
-            return new ApiResponse<ProductLocations_Tbl>
+            return new ApiResponse<ProductLocation>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,

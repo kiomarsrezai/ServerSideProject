@@ -39,10 +39,10 @@ namespace WareHousingApi.WebApi.Controllers
         }
 
         [HttpGet("GetProductPriceHistory")]
-        public ApiResponse<IEnumerable<ProductPrices_Tbl>> GetProductPriceHistory(int ProductID)
+        public ApiResponse<IEnumerable<ProductPrice>> GetProductPriceHistory(int ProductID)
         {
             var getPriceHistory = _context.productPriceUW.Get(pp => pp.ProductID == ProductID);
-            return new ApiResponse<IEnumerable<ProductPrices_Tbl>>
+            return new ApiResponse<IEnumerable<ProductPrice>>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -53,12 +53,12 @@ namespace WareHousingApi.WebApi.Controllers
 
         [HttpGet("GetById")]
         [Produces("application/json")]
-        [ProducesResponseType(typeof(ProductPrices_Tbl), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ProductPrice), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ApiResponse<ProductPrices_Tbl> GetById([FromQuery] int productpriceid)
+        public ApiResponse<ProductPrice> GetById([FromQuery] int productpriceid)
         {
             var productPrice = _context.productPriceUW.GetById(productpriceid);
-            return new ApiResponse<ProductPrices_Tbl>
+            return new ApiResponse<ProductPrice>
             {
                 flag = true,
                 StatusCode = ApiResultStatusCode.Success,
@@ -100,7 +100,7 @@ namespace WareHousingApi.WebApi.Controllers
 
             try
             {
-                ProductPrices_Tbl PP = new ProductPrices_Tbl
+                ProductPrice PP = new ProductPrice
                 {
                     CoverPrice = model.CoverPrice,
                     PurchasePrice = model.PurchasePrice,
@@ -113,7 +113,7 @@ namespace WareHousingApi.WebApi.Controllers
                 };
                 _context.productPriceUW.Create(PP);
                 _context.Save();
-                return new ApiResponse<ProductPrices_Tbl>
+                return new ApiResponse<ProductPrice>
                 {
                     flag = true,
                     StatusCode = ApiResultStatusCode.Success,

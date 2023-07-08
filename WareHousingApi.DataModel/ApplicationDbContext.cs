@@ -43,29 +43,29 @@ namespace WareHousingApi.DataModel
 
         public override int SaveChanges()
         {
-            cleanStr();
+            CleanStr();
             return base.SaveChanges();
         }
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)
         {
-            cleanStr();
+            CleanStr();
             return base.SaveChanges(acceptAllChangesOnSuccess);
         }
 
         public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
         {
-            cleanStr();
+            CleanStr();
             return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
         }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
-            cleanStr();
+            CleanStr();
             return base.SaveChangesAsync(cancellationToken);
         }
 
-        private void cleanStr()
+        private void CleanStr()
         {
             var changedEntities = ChangeTracker.Entries()
                 //پيدا کردن رکوردهایی که عمليات افزودن و ویرایش دارند

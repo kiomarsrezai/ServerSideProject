@@ -21,133 +21,133 @@ namespace WareHousingApi.DataModel.Services.Repository
 
         private GenericCRUDClass<ApplicationUsers> _userManager;
         private GenericCRUDClass<ApplicationRoles> _roleManager;
-        private GenericCRUDClass<Products_Tbl> _product;
-        private GenericCRUDClass<Suppliers_Tbl> _supplier;
-        private GenericCRUDClass<Countries_Tbl> _country;
-        private GenericCRUDClass<FiscalYears_Tbl> _fiscalYear;
-        private GenericCRUDClass<WareHouses_Tbl> _wareHouse;
-        private GenericCRUDClass<Inventories_Tbl> _inventory;
-        private GenericCRUDClass<ProductPrices_Tbl> _productPrice;
-        private GenericCRUDClass<ProductLocations_Tbl> _productLocation;
-        private GenericCRUDClass<UserInWareHouse_Tbl> _userInWareHouse;
-        private GenericCRUDClass<Customers_Tbl> _customer;
-        private GenericCRUDClass<Invoices_Tbl> _invoices;
-        private GenericCRUDClass<InvoiceItems_Tbl> _invoicesItems;
+        private GenericCRUDClass<Product> _product;
+        private GenericCRUDClass<Supplier> _supplier;
+        private GenericCRUDClass<Country> _country;
+        private GenericCRUDClass<FiscalYear> _fiscalYear;
+        private GenericCRUDClass<WareHouse> _wareHouse;
+        private GenericCRUDClass<Inventory> _inventory;
+        private GenericCRUDClass<ProductPrice> _productPrice;
+        private GenericCRUDClass<ProductLocation> _productLocation;
+        private GenericCRUDClass<UserInWareHouse> _userInWareHouse;
+        private GenericCRUDClass<Customer> _customer;
+        private GenericCRUDClass<Invoice> _invoices;
+        private GenericCRUDClass<InvoiceItem> _invoicesItems;
 
         //لیست اقلام فاکتورها
-        public GenericCRUDClass<InvoiceItems_Tbl> invoicesItemsUW
+        public GenericCRUDClass<InvoiceItem> invoicesItemsUW
         {
             //فقط خواندنی
             get
             {
                 if (_invoicesItems == null)
                 {
-                    _invoicesItems = new GenericCRUDClass<InvoiceItems_Tbl>(_context);
+                    _invoicesItems = new GenericCRUDClass<InvoiceItem>(_context);
                 }
                 return _invoicesItems;
             }
         }
         //لیست فاکتورها
-        public GenericCRUDClass<Invoices_Tbl> invoicesUW
+        public GenericCRUDClass<Invoice> invoicesUW
         {
             //فقط خواندنی
             get
             {
                 if (_invoices == null)
                 {
-                    _invoices = new GenericCRUDClass<Invoices_Tbl>(_context);
+                    _invoices = new GenericCRUDClass<Invoice>(_context);
                 }
                 return _invoices;
             }
         }
         //لیست مشتریان هر انبار
-        public GenericCRUDClass<Customers_Tbl> customerUW
+        public GenericCRUDClass<Customer> customerUW
         {
             //فقط خواندنی
             get
             {
                 if (_customer == null)
                 {
-                    _customer = new GenericCRUDClass<Customers_Tbl>(_context);
+                    _customer = new GenericCRUDClass<Customer>(_context);
                 }
                 return _customer;
             }
         }
         //لیست کاربران هر انبار
-        public GenericCRUDClass<UserInWareHouse_Tbl> userInWareHouseUW
+        public GenericCRUDClass<UserInWareHouse> userInWareHouseUW
         {
             //فقط خواندنی
             get
             {
                 if (_userInWareHouse == null)
                 {
-                    _userInWareHouse = new GenericCRUDClass<UserInWareHouse_Tbl>(_context);
+                    _userInWareHouse = new GenericCRUDClass<UserInWareHouse>(_context);
                 }
                 return _userInWareHouse;
             }
         }
         //محل استقرار کالا در انبار
-        public GenericCRUDClass<ProductLocations_Tbl> productLocationUW
+        public GenericCRUDClass<ProductLocation> productLocationUW
         {
             //فقط خواندنی
             get
             {
                 if (_productLocation == null)
                 {
-                    _productLocation = new GenericCRUDClass<ProductLocations_Tbl>(_context);
+                    _productLocation = new GenericCRUDClass<ProductLocation>(_context);
                 }
                 return _productLocation;
             }
         }
         //قیمت گذاری کالا
-        public GenericCRUDClass<ProductPrices_Tbl> productPriceUW
+        public GenericCRUDClass<ProductPrice> productPriceUW
         {
             //فقط خواندنی
             get
             {
                 if (_productPrice == null)
                 {
-                    _productPrice = new GenericCRUDClass<ProductPrices_Tbl>(_context);
+                    _productPrice = new GenericCRUDClass<ProductPrice>(_context);
                 }
                 return _productPrice;
             }
         }
         //انبارداری
-        public GenericCRUDClass<Inventories_Tbl> inventoryUW
+        public GenericCRUDClass<Inventory> inventoryUW
         {
             //فقط خواندنی
             get
             {
                 if (_inventory == null)
                 {
-                    _inventory = new GenericCRUDClass<Inventories_Tbl>(_context);
+                    _inventory = new GenericCRUDClass<Inventory>(_context);
                 }
                 return _inventory;
             }
         }
         //لیست انبارها
-        public GenericCRUDClass<WareHouses_Tbl> wareHouseUW
+        public GenericCRUDClass<WareHouse> wareHouseUW
         {
             //فقط خواندنی
             get
             {
                 if (_wareHouse == null)
                 {
-                    _wareHouse = new GenericCRUDClass<WareHouses_Tbl>(_context);
+                    _wareHouse = new GenericCRUDClass<WareHouse>(_context);
                 }
                 return _wareHouse;
             }
         }
 
         //سال مالی
-        public GenericCRUDClass<FiscalYears_Tbl> fiscalYearUW
+        public GenericCRUDClass<FiscalYear> fiscalYearUW
         {
             //فقط خواندنی
             get
             {
                 if (_fiscalYear == null)
                 {
-                    _fiscalYear = new GenericCRUDClass<FiscalYears_Tbl>(_context);
+                    _fiscalYear = new GenericCRUDClass<FiscalYear>(_context);
                 }
                 return _fiscalYear;
             }
@@ -180,40 +180,40 @@ namespace WareHousingApi.DataModel.Services.Repository
             }
         }
         //کشور ها
-        public GenericCRUDClass<Countries_Tbl> countryUW
+        public GenericCRUDClass<Country> countryUW
         {
             //فقط خواندنی
             get
             {
                 if (_country == null)
                 {
-                    _country = new GenericCRUDClass<Countries_Tbl>(_context);
+                    _country = new GenericCRUDClass<Country>(_context);
                 }
                 return _country;
             }
         }
         //تامین کنندگان
-        public GenericCRUDClass<Suppliers_Tbl> supplierUW
+        public GenericCRUDClass<Supplier> supplierUW
         {
             //فقط خواندنی
             get
             {
                 if (_supplier == null)
                 {
-                    _supplier = new GenericCRUDClass<Suppliers_Tbl>(_context);
+                    _supplier = new GenericCRUDClass<Supplier>(_context);
                 }
                 return _supplier;
             }
         }
         //کالاها
-        public GenericCRUDClass<Products_Tbl> productUW
+        public GenericCRUDClass<Product> productUW
         {
             //فقط خواندنی
             get
             {
                 if (_product == null)
                 {
-                    _product = new GenericCRUDClass<Products_Tbl>(_context);
+                    _product = new GenericCRUDClass<Product>(_context);
                 }
                 return _product;
             }
@@ -229,7 +229,7 @@ namespace WareHousingApi.DataModel.Services.Repository
             _context.SaveChanges();
         }
 
-        public async void SaveAsync()
+        public async Task SaveAsync()
         {
             await _context.SaveChangesAsync();
         }
