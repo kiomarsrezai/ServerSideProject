@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oqscE+EAuUAt1oZznTdOisBg5fDrX2YI8tjXQLCu+CE=",
+  "Hash": "rhYB0gYlILWMKU45usitCIC766CXmpKICrHIwXNSDrQ=",
   "Source": "WareHousingApi.WebApi",
   "BasePath": "_content/WareHousingApi.WebApi",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WareHousingApi.WebApi\\wwwroot",
       "Source": "WareHousingApi.WebApi",
-      "ContentRoot": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\",
+      "ContentRoot": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\",
       "BasePath": "_content/WareHousingApi.WebApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\1087915c9f2b4f088b788340fbae99b6.jpg",
+      "Identity": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\1087915c9f2b4f088b788340fbae99b6.jpg",
       "SourceId": "WareHousingApi.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\",
+      "ContentRoot": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\",
       "BasePath": "_content/WareHousingApi.WebApi",
       "RelativePath": "Upload/ProductImage/1087915c9f2b4f088b788340fbae99b6.jpg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\Upload\\ProductImage\\1087915c9f2b4f088b788340fbae99b6.jpg"
     },
     {
-      "Identity": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\8cb330310b014e19b467895e1dfee918.jpg",
+      "Identity": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\8cb330310b014e19b467895e1dfee918.jpg",
       "SourceId": "WareHousingApi.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\",
+      "ContentRoot": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\",
       "BasePath": "_content/WareHousingApi.WebApi",
       "RelativePath": "Upload/ProductImage/8cb330310b014e19b467895e1dfee918.jpg",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\Upload\\ProductImage\\8cb330310b014e19b467895e1dfee918.jpg"
     },
     {
-      "Identity": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\a9357737a2674877aebf64ba65a07200.jpg",
+      "Identity": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\a9357737a2674877aebf64ba65a07200.jpg",
       "SourceId": "WareHousingApi.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\",
+      "ContentRoot": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\",
       "BasePath": "_content/WareHousingApi.WebApi",
       "RelativePath": "Upload/ProductImage/a9357737a2674877aebf64ba65a07200.jpg",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\Upload\\ProductImage\\a9357737a2674877aebf64ba65a07200.jpg"
     },
     {
-      "Identity": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\bccb02f6ded54e9b895bce4dbed22bfe.jpg",
+      "Identity": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\bccb02f6ded54e9b895bce4dbed22bfe.jpg",
       "SourceId": "WareHousingApi.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\",
+      "ContentRoot": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\",
       "BasePath": "_content/WareHousingApi.WebApi",
       "RelativePath": "Upload/ProductImage/bccb02f6ded54e9b895bce4dbed22bfe.jpg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\Upload\\ProductImage\\bccb02f6ded54e9b895bce4dbed22bfe.jpg"
     },
     {
-      "Identity": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\c5afe11501ea43f1bb2d11d88a0edd86.jpg",
+      "Identity": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\c5afe11501ea43f1bb2d11d88a0edd86.jpg",
       "SourceId": "WareHousingApi.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\",
+      "ContentRoot": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\",
       "BasePath": "_content/WareHousingApi.WebApi",
       "RelativePath": "Upload/ProductImage/c5afe11501ea43f1bb2d11d88a0edd86.jpg",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\Upload\\ProductImage\\c5afe11501ea43f1bb2d11d88a0edd86.jpg"
     },
     {
-      "Identity": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\cb4643a73c5f45df9cd6d4a34b41c1ab.jpg",
+      "Identity": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\cb4643a73c5f45df9cd6d4a34b41c1ab.jpg",
       "SourceId": "WareHousingApi.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\",
+      "ContentRoot": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\",
       "BasePath": "_content/WareHousingApi.WebApi",
       "RelativePath": "Upload/ProductImage/cb4643a73c5f45df9cd6d4a34b41c1ab.jpg",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\Upload\\ProductImage\\cb4643a73c5f45df9cd6d4a34b41c1ab.jpg"
     },
     {
-      "Identity": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\d5424ff5bbb64c4d805505e8d406adef.jpg",
+      "Identity": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\Upload\\ProductImage\\d5424ff5bbb64c4d805505e8d406adef.jpg",
       "SourceId": "WareHousingApi.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\",
+      "ContentRoot": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\",
       "BasePath": "_content/WareHousingApi.WebApi",
       "RelativePath": "Upload/ProductImage/d5424ff5bbb64c4d805505e8d406adef.jpg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\Upload\\ProductImage\\d5424ff5bbb64c4d805505e8d406adef.jpg"
     },
     {
-      "Identity": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\Upload\\UserImage\\86d84166374b4cd995480343a3c66391.jpg",
+      "Identity": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\Upload\\UserImage\\86d84166374b4cd995480343a3c66391.jpg",
       "SourceId": "WareHousingApi.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\",
+      "ContentRoot": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\",
       "BasePath": "_content/WareHousingApi.WebApi",
       "RelativePath": "Upload/UserImage/86d84166374b4cd995480343a3c66391.jpg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\Upload\\UserImage\\86d84166374b4cd995480343a3c66391.jpg"
     },
     {
-      "Identity": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\Upload\\UserImage\\8e44198272db4576ae1b1c996880b9dd.jpg",
+      "Identity": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\Upload\\UserImage\\8e44198272db4576ae1b1c996880b9dd.jpg",
       "SourceId": "WareHousingApi.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\",
+      "ContentRoot": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\",
       "BasePath": "_content/WareHousingApi.WebApi",
       "RelativePath": "Upload/UserImage/8e44198272db4576ae1b1c996880b9dd.jpg",
       "AssetKind": "All",
@@ -170,10 +170,27 @@
       "OriginalItemSpec": "wwwroot\\Upload\\UserImage\\8e44198272db4576ae1b1c996880b9dd.jpg"
     },
     {
-      "Identity": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\Upload\\UserImage\\b60fccb02c9f4eb2b9e47b120f296d1d.jpg",
+      "Identity": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\Upload\\UserImage\\9a5e7625dfe24aa28f0ea4919619fc85.jpg",
       "SourceId": "WareHousingApi.WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\WareHousingApi\\WareHousingApi.Api\\WareHousingApi.WebApi\\wwwroot\\",
+      "ContentRoot": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\",
+      "BasePath": "_content/WareHousingApi.WebApi",
+      "RelativePath": "Upload/UserImage/9a5e7625dfe24aa28f0ea4919619fc85.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\UserImage\\9a5e7625dfe24aa28f0ea4919619fc85.jpg"
+    },
+    {
+      "Identity": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\Upload\\UserImage\\b60fccb02c9f4eb2b9e47b120f296d1d.jpg",
+      "SourceId": "WareHousingApi.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\InventoryBackEnd\\ServerSideProject\\WareHousingApi.WebApi\\wwwroot\\",
       "BasePath": "_content/WareHousingApi.WebApi",
       "RelativePath": "Upload/UserImage/b60fccb02c9f4eb2b9e47b120f296d1d.jpg",
       "AssetKind": "All",
